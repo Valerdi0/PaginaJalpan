@@ -12,7 +12,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1>JALPANPUEBLA.COM</h1>
+				<h1><a href="/">JALPANPUEBLA.COM</a></h1>
 				<nav>
 					<ul>
 						<li><a href="/turismo">Turismo</a></li>
@@ -122,9 +122,22 @@ Al mismo tiempo los jóvenes prometen ante el fiscal continuar con la tradición
 
 		<!-- Footer -->
 			<!-- Footer -->
-			<footer id="footer">
-
-					<div class="copynote">
+			<!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-12 segment">
+                            <a href="https://www.jalpanpuebla.com/">
+                                <center><img src="{{asset('turi/images/logo001.png')}}" onerror="this.src='{{asset('turi/images/logo001.png')}}'; this.onerror=null;" alt="Turismo" title="Municipio de Jalpan, Puebla." class="img-responsive" style="height: 20px;"></a>
+                            </a>
+                            <p class="white" style="font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 550; ">Jalpan decidido al cambio verdadero.</p>
+                            <div style="padding: 10px;"></div>   
+                            <img src="{{asset('turi/images/escudo.png')}}" title="H. Ayuntamiento de Jalpan, Puebla" style="height: 90px; padding-right: 2.5%;"> 
+                            <img src="{{asset('turi/images/logoipn.png')}}" title="Instituto Politécnico Nacional" style="height: 90px; padding-left: 2.5%;"> 
+                        </div><!-- /.col-md-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+                <div class="copynote">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-center">
@@ -135,7 +148,11 @@ Al mismo tiempo los jóvenes prometen ante el fiscal continuar con la tradición
                     </div><!-- /.container -->
                 </div><!-- /.copynote -->
 
-			</footer>
+                <div class="nav pull-right scroll-top">
+                    <a href="#home" title="Scroll to top"><i class="fa fa-angle-up"></i></a>
+                </div>
+
+            </footer><!-- /.footer -->
 
 		<!-- Scripts -->
 			<script src="{{asset('turi/jstrad/jquery.min.js')}}"></script>

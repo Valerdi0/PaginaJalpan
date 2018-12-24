@@ -46,15 +46,15 @@ Route::get('/turismo/cafetales', function () {
 });
 
 Route::get('/turismo/riqueza-natural', function () {
-    return view('plantilla.construccion');
+    return view('plantilla.riqueza-natural');
 });
 
 Route::get('/turismo/gastronomia', function () {
-    return view('plantilla.construccion');
+    return view('plantilla.gastronomia');
 });
 
 Route::get('/turismo/leyendas', function () {
-    return view('plantilla.construccion');
+    return view('plantilla.leyendas');
 });
 
 Route::get('/contacto', function () {

@@ -2056,7 +2056,7 @@ input, select, textarea {
 				}
 
 				.main.dark .button.style2.down {
-					background-image: url("{{asset('../images/dark-arrow.svg");
+					background-image: url("../images/dark-arrow.svg");
 				}
 
 		body.is-touch .main {

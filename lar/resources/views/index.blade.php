@@ -85,7 +85,7 @@
 
 													<!-- Feature -->
 														<section class="box feature">
-															<a href="#" class="image featured"><img src="{{asset('images/señor.jpg')}}" alt="" style="height: 200px;" /></a>
+															<a href="#" class="image featured"><img src="{{asset('images/senor.jpg')}}" alt="" style="height: 200px;" /></a>
 															<h3><a href="#">Mario Juaquinillo Márquez</a></h3>
 															<p>
 																Cronista del pueblo de Apapantilla.
@@ -109,7 +109,7 @@
 
 													<!-- Feature -->
 														<section class="box feature">
-															<a href="#" class="image featured"><img src="{{asset('images/señora.jpg')}}" alt="" style="height: 200px;" /></a>
+															<a href="#" class="image featured"><img src="{{asset('images/senora.jpg')}}" alt="" style="height: 200px;" /></a>
 															<h3><a href="#">El arte de Cocinar</a></h3>
 															<p>
 																Tortillas hechas a mano por personas del municipio.

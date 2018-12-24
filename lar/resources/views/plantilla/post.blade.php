@@ -23,12 +23,12 @@
 
 		<section class="post">
 
-			<a href="{{ url('/post/list') }}" class="btn btn-primary"><- Listado</a>
+			<a href="{{ url('/post/list') }}" class="btn btn-primary" >Listado</a>
 			
 			<article class="post">
 				
 				<div class="page-header">
-					<h3>{{ $post->title }}<br/> <small>{{ $post->publish_date }}</small></h3>
+					<h1>{{ $post->title }}<br/> <small>{{ $post->publish_date }}</small></h1>
 				</div>
 
 				<p>
@@ -36,7 +36,46 @@
 				</p>
 
 				<p>
-					{{ $post->archivo }}
+					
+					<div class="row">
+						@foreach($archivos as $archivo)
+							@if(strpos($archivo, ".jpg"))
+							<div class="col-xs-6 col-md-3">
+							    <a href="#" class="thumbnail">
+							      <img src="/files/{{$archivo}}" alt="">
+							    </a>
+							</div>
+							@endif
+							@if(strpos($archivo, ".png"))
+							<div class="col-xs-6 col-md-3">
+							    <a href="#" class="thumbnail">
+							      <img src="/files/{{$archivo}}" alt="">
+							    </a>
+							</div>
+							@endif
+							@if(strpos($archivo, ".jpeg"))
+							<div class="col-xs-6 col-md-3">
+							    <a href="#" class="thumbnail">
+							      <img src="/files/{{$archivo}}" alt="">
+							    </a>
+							</div>
+							@endif
+							@if(strpos($archivo, ".pdf"))
+							<div class="col-xs-6 col-md-3">
+							    <a target="_blank" class="thumbnail" href="{{asset('/files/'.$archivo)}}">
+							    	{{$post->archivo}}
+								</a>
+							</div>
+							@endif
+							@if(strpos($archivo, ".doc"))
+							<div class="col-xs-6 col-md-3">
+							    <a target="_blank" class="thumbnail" href="{{asset('/files/'.$archivo)}}">
+							    	{{$post->archivo}}
+								</a>
+							</div>
+							@endif
+						@endforeach
+					</div>					
 				</p>
 
 			</article>

@@ -29,7 +29,7 @@
 
 					<p>{{ $post->resume }}</p>
 
-					<a href="{{ url('/post/post/'.$post->id) }}" class="btn btn-primary">Ver post -></a>
+					<a href="{{ url('/post/post/'.$post->id) }}" class="btn btn-primary">Ver post</a>
 
 				</article>
 			@endforeach

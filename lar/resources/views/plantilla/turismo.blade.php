@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 
 <head>
@@ -54,7 +54,7 @@
                     <div class="navbar-header pull-left">
                         <a class="navbar-brand page-scroll" href="/">
                             <!-- replace with your brand logo/text -->
-                            <span class="brand-logo"><img src="{{asset('turi/images/logo.png')}}" onerror="this.src='images/logo.png'; this.onerror=null;" alt="jalpan, Puebla" title="JALPANPUEBLA.COM" class="img-responsive"></span>
+                            <span class="brand-logo"><img src="{{asset('turi/images/logo.png')}}" onerror="this.src='images/logo05.png'; this.onerror=null;" alt="jalpan, Puebla" title="JALPANPUEBLA.COM" class="img-responsive"></span>
                         </a>
                     </div>
                     <div class="main-nav pull-right">
@@ -171,12 +171,14 @@
 
 
             <!-- Portfolio/Gallery Section -->
-            <section id="portfolio" class="portfolio content-section parallax">
+            <section id="portfolio" class="portfolio content-section parallax" >
                 <div class="container">
                     <div class="row text-center">
                         <div class="col-md-12">
                             <h2>GALERIA</h2>
-                         <div style="position: center;"><hr style="height: 1px; width: 80%; background: #686868;"></hr></div>
+                            <div style="position: center;">
+                                <hr style="height: 1px; width: 80%; background: #686868;"></hr>
+                            </div>
                         </div><!-- /.col-md-12 -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->
@@ -187,7 +189,7 @@
                             <img src="{{asset('turi/images/gallery/principal01.jpg')}}">
                         </div><!-- /.item -->
                         <div class="item recent-project">
-                            <img src="{{asset('turi/images/gallery/project-one.jpg')}}" >                          
+                            <img src="{{asset('turi/images/gallery/project-one.jpg')}}">                          
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-two.jpg')}}">
@@ -195,50 +197,38 @@
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-three.jpg')}}">
                         </div><!-- /.item -->
-
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-four.jpg')}}">
-                        
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-five.jpg')}}">
-                        
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-six.jpg')}}">
-                         
                         </div><!-- /.item -->
                         <div class="item recent-project">
-                            <img src="{{asset('turi/images/gallery/project-seven.jpg')}}">
-                         
+                            <img src="{{asset('turi/images/gallery/project-seven.jpg')}}">              
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-eight.jpg')}}">
-                     
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-nine.jpg')}}">
-                    
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-ten.jpg')}}">
-                         
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-eleven.jpg')}}">
-                        
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-twelve.jpg')}}">
-                        
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-thirteen.jpg')}}">
-                        
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-fourteen.jpg')}}">
-                    
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-fiveteen.jpg')}}">
@@ -247,7 +237,7 @@
                             <img src="{{asset('turi/images/gallery/project-sixteen.jpg')}}">
                         </div><!-- /.item -->
                         <div class="item recent-project">
-                            <img src="{(asset('assets/images/gallery/project-seventeen.jpg'))}">
+                            <img src="{{asset('turi/images/gallery/project-seventeen.jpg')}}">
                         </div><!-- /.item -->
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-eighteen.jpg')}}">
@@ -273,7 +263,8 @@
                         <div class="item recent-project">
                             <img src="{{asset('turi/images/gallery/project-twentyfive.jpg')}}">
                         </div><!-- /.item -->
-                    </div><!-- /.recent-project-carousel -->
+                    </div>
+                    <!-- /.recent-project-carousel -->
 
                     <div class="customNavigation project-navigation text-center">
                         <a class="btn-prev"><i class="fa fa-angle-left fa-2x"></i></a>

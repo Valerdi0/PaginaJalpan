@@ -36,6 +36,7 @@ class PostController extends Controller
             return 'No existe el post';
         else {
             $data['post'] = $post;
+            $data['archivos'] = explode(",", $post->archivo);
             $data['comments'] = Comment::where('post_id', $id)->get();
             return view('plantilla.post', $data);
         }

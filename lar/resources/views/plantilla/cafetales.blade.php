@@ -12,7 +12,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1>JALPANPUEBLA.COM</h1>
+				<h1><a href="/">JALPANPUEBLA.COM</a></h1>
 				<nav>
 					<ul>
 						<li><a href="/turismo">Turismo</a></li>
