@@ -11,7 +11,10 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="/">JALPANPUEBLA.COM</a></h1>
+				<a class="navbar-brand page-scroll" href="https://www.jalpanpuebla.com/">
+                    <!-- replace with your brand logo/text -->
+                    <span class="brand-logo"><img src="{{asset('turi/images/logo.png')}}" onerror="this.src="{{asset('turi/images/logo.png')}}"; this.onerror=null;" alt="Jalpan, Puebla" title="JALPANPUEBLA.COM" class="img-responsive" style="display: inline-block; padding: 3px 0; margin: 0 65px; height: 81%; padding-top: 10px;"></span>
+                 </a>
 				<nav>
 					<ul>
 						<li><a href="/turismo">Turismo</a></li>

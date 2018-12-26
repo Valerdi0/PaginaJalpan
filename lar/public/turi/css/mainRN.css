@@ -686,7 +686,7 @@ input, select, textarea {
 			height: 5em;
 			line-height: 4.5em;
 			padding: 0;
-			background-image: url("../images/dark-arrow.svg");
+			background-image: url("images/dark-arrow.svg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			text-indent: -10em;
@@ -761,7 +761,7 @@ input, select, textarea {
 			input[type="reset"].style2.down,
 			.button.style2.down,
 			button.style2.down {
-				background-image: url("../images/arrow.svg");
+				background-image: url("images/arrow.svg");
 			}
 
 /* Form */
@@ -950,7 +950,7 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 			height: 100%;
-			background: url("{{asset('../../images/overlay.png");
+			background: url("images/overlay.png");
 		}
 
 		.image img {
@@ -1295,7 +1295,7 @@ input, select, textarea {
 			position: absolute;
 			width: 96px;
 			height: 64px;
-			background: url("{{asset('../images/poptrox-nav.svg");
+			background: url("images/poptrox-nav.svg");
 			top: calc(50% - 1.5em);
 			margin: -32px 0 0 0;
 		}
@@ -1361,7 +1361,7 @@ input, select, textarea {
 				height: 40px;
 				border-radius: 100%;
 				box-shadow: inset 0 0 0 2px #fff;
-				background: url("../images/poptrox-closer.svg") center center;
+				background: url("images/poptrox-closer.svg") center center;
 				color: #ffffff !important;
 			}
 
@@ -1817,7 +1817,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgb(35, 38, 39);
+		background: rgba(35, 38, 39, 1);
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -1856,12 +1856,18 @@ input, select, textarea {
 
 					#header nav ul li a {
 						display: block;
-						color: #fff;
+						color: white;
+						text-shadow: -2px 2px 3px #000;
 						text-decoration: none;
 						height: 3em;
 						line-height: 3em;
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
+					}
+
+					#header nav ul li a:hover {
+						display: block;
+						color: rgba(0,100,74,1);
 					}
 
 		@media screen and (max-width: 736px) {
@@ -2056,7 +2062,7 @@ input, select, textarea {
 				}
 
 				.main.dark .button.style2.down {
-					background-image: url("../images/dark-arrow.svg");
+					background-image: url("images/dark-arrow.svg");
 				}
 
 		body.is-touch .main {
@@ -2141,7 +2147,6 @@ input, select, textarea {
 			}
 
 		}
-
 /* Footer */
 
 	footer {
@@ -2225,13 +2230,112 @@ input, select, textarea {
 	    color: #fff;
 	    background: #232627; /* Hover color, can be changed via colors.css */
 	}
+		
+
+
+/*Inicio*/
+
+/* Intro */
+
+	#intro {
+		background: url("images/overlay.png"), url("../../images/riqueza.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
+/* Murales */
+
+	#murales {
+		background: url("images/overlay.png"), url("../../images/inicio/murales.JPG");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Balneario */
+
+	#balneario {
+		background: url("images/overlay.png"), url("../../images/inicio/bano.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Puente */
+
+	#puente {
+		background: url("images/overlay.png"), url("../../images/inicio/puente.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Piramide */
+
+	#piramide {
+		background: url("images/overlay.png"), url("../../images/inicio/piramide.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Gavillero */
+
+	#gavillero {
+		background: url("images/overlay.png"), url("../../images/inicio/gavillero.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Carnaval */
+
+	#carnaval {
+		background: url("images/overlay.png"), url("../../images/inicio/carnaval.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+/*Conoce*/
 
 
 
 /* Intro */
 
+	#introc {
+		background: url("images/overlay.png"), url("../../images/conoce/principal.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
+	}
+
+/* Ubicacion */
+
+	#ubicacion {
+		background: url("images/overlay.png"), url("../../images/conoce/plaza_cívica.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Toponimia */
+
+	#toponimia {
+		background: url("images/overlay.png"), url("../../images/conoce/municipio.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Descubre */
+
+/* Intro */
+
 	#introdescubre {
-		background: url("../images/overlay.png"), url("../images/enchiladas.jpg");
+		background: url("images/overlay.png"), url("../images/riqueza.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2240,7 +2344,7 @@ input, select, textarea {
 /* Balneario */
 
 	#balneariod {
-		background: url("../images/overlay.png"), url("../images/tamales.jpg");
+		background: url("images/overlay.png"), url("../images/cafetales.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2249,14 +2353,151 @@ input, select, textarea {
 /* Puente */
 
 	#puented {
-		background: url("../images/overlay.png"), url("../images/cafe.jpg");
+		background: url("images/overlay.png"), url("../images/cafetales.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
+/* Cascada */
 
-/
+	#cascadad {
+		background: url("images/overlay.png"), url("../images/cafetales.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Murales */
+
+	#muralesd {
+		background: url("images/overlay.png"), url("../../images/descubre/murales/mural1.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Piramide */
+	
+	#piramided {
+		background: url("images/overlay.png"), url("../images/cafetales.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Gavillero */
+
+	#gavillerod {
+		background: url("images/overlay.png"), url("../../images/descubre/gavillero/gavillero.JPG");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Plaza */
+	
+	#plazad {
+		background: url("images/overlay.png"), url("../../images/descubre/plaza_civica/1.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Iglesia San Antonio */
+	
+	#iglesiasand {
+		background: url("images/overlay.png"), url("../../images/descubre/iglesia_san_antonio/iglesia_san_antonio.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Saborea */
+
+	#intros {
+		background: url("images/overlay.png"), url("../../images/saborea/gusano.JPG");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+	#gastronomia {
+		background: url("images/overlay.png"), url("../../images/saborea/principal.png");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Intro */
+
+	#introdisfruta{
+		background: url("images/overlay.png"), url("../../images/disfruta/carnaval_de_mixquiahuala/colors.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Feria */
+	
+	#feriad {
+		background: url("images/overlay.png"), url("../../images/disfruta/feria_del_calvario/6.JPG");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Carnaval */
+
+	#carnavald {
+		background: url("images/overlay.png"), url("../../images/disfruta/carnaval_de_mixquiahuala/4.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Quita y Pone Bandera*/
+	
+	#quitad {
+		background: url("images/overlay.png"), url("../../images/disfruta/quita_y_pone_bandera/maxresdefault.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Feria del Cohetero */
+	
+	#feriacoheterod {
+		background: url("images/overlay.png"), url("../../images/disfruta/feria_del_cohetero/feria.JPG");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* La Charreria */
+	
+	#charreriad {
+		background: url("images/overlay.png"), url("../../images/disfruta/charreria/adelita.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Galeria Carnaval */
+	#introcarnaval{
+		background: url("images/overlay.png"), url("../../images/disfruta/carnaval_de_mixquiahuala/principal.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
+
+/* Sorprendete */
+	#introsorprende{
+		background: url("images/overlay.png"), url("../../images/sorprendete/pricpal_2.jpeg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
 
 /* Contact */
 
@@ -2300,3 +2541,62 @@ input, select, textarea {
 
 		}
 
+/* 10.  Footer
+/* ---------------------------------------------- */
+
+footer h2{
+    display: inline-block;
+    color:#fff;
+}
+
+footer h4{
+    margin: 0 0 20px 0;
+    padding: 0;
+    color:#fff;
+}
+
+footer p {
+    margin: -14px;
+    font-size: 14px;
+}
+
+footer .copynote{
+    padding: 20px 0;
+    background:rgba(54, 53, 54, 1); /* Dark color/Footer color, can be changed via colors.css */
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+   	line-height: 1.42857143;
+}
+
+footer .segment{
+    padding-bottom: 5px;
+}
+
+
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 4%;
+    right: 1%;
+    z-index: 100;
+}
+
+.scroll-top a:link,
+.scroll-top a:visited {
+    display: inline-block;
+    padding: 5px 15px;
+    color: #fff;
+    border: 1px solid rgba(0,100,74, 1);
+    background: rgba(0,100,74, 1); /* Primary color, can be changed via colors.css */
+    font-size: 30px;
+}
+
+.scroll-top a:hover {
+    border: 1px solid #fff; /* Hover border color, can be changed via colors.css */
+    outline: 0;
+    color: #fff;
+    background: #232627; /* Hover color, can be changed via colors.css */
+}

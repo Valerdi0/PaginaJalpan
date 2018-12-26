@@ -12,13 +12,16 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="/">JALPANPUEBLA.COM</a></h1>
+				<a class="navbar-brand page-scroll" href="https://www.jalpanpuebla.com/">
+                    <!-- replace with your brand logo/text -->
+                    <span class="brand-logo"><img src="{{asset('turi/images/logo.png')}}" onerror="this.src="{{asset('turi/images/logo.png')}}"; this.onerror=null;" alt="Jalpan, Puebla" title="JALPANPUEBLA.COM" class="img-responsive" style="display: inline-block; padding: 3px 0; margin: 0 65px; height: 81%; padding-top: 10px;"></span>
+                 </a>
 				<nav>
 					<ul>
 						<li><a href="/turismo">Turismo</a></li>
                         <li><a href="/turismo/tradiciones">Tradiciones</a></li>
 						<li><a href="/turismo/riqueza-natural">Riqueza Natural</a></li>
-						<li><a href="#introdescubre"><strong>Cafetales</strong></a></li>
+						<li><a href="/turismo/cafetales"><strong>Cafetales</strong></a></li>
                         <li><a href="/turismo/gastronomia">Gastronomía</a>
                         <li><a href="/turismo/leyendas">Mitos</a></li>
 						<li><a href="/turismo/#clients">Ubicación</a></li>
@@ -33,9 +36,7 @@
 						<h2 style="color:#ffd7f5; font-weight: 900; text-shadow:-1px -1px 0 #801d00;"> Cafetales</h2>
 					</header>
 					<p style="color: #fff; font-weight: 900; text-shadow:-1px -1px 0 #000;  ">Es un destino tur&iacute;stico que tiene una vocaci&oacute;n cultural, debido a que la mayor&iacute;a de la oferta tur&iacute;stica se complementa de festividades  religiosas, ferias y eventos culturales en sus diferentes comunidades.</p>
-					<footer>
-						<a href="#balneariod" class="button style2 down">More</a>
-					</footer>
+					<a href="#balneariod" class="button style2 down">More</a>
 				</div>
 			</section>
 
@@ -110,9 +111,21 @@
 			</section>
 
 		<!-- Footer -->
-			<footer id="footer">
-
-					<div class="copynote">
+            <footer>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-12 segment">
+                            <a href="https://www.jalpanpuebla.com/">
+                                <center><img src="{{asset('turi/images/logo001.png')}}" onerror="this.src='{{asset('turi/images/logo001.png')}}'; this.onerror=null;" alt="Turismo" title="Municipio de Jalpan, Puebla." class="img-responsive" style="height: 20px;"></a>
+                            </a>
+                            <p class="white" style="font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 550; ">Jalpan decidido al cambio verdadero.</p>
+                            <div style="padding: 10px;"></div>   
+                            <img src="{{asset('turi/images/escudo.png')}}" title="H. Ayuntamiento de Jalpan, Puebla" style="height: 90px; padding-right: 2.5%;"> 
+                            <img src="{{asset('turi/images/logoipn.png')}}" title="Instituto Politécnico Nacional" style="height: 90px; padding-left: 2.5%;"> 
+                        </div><!-- /.col-md-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+                <div class="copynote">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-center">
@@ -123,8 +136,11 @@
                     </div><!-- /.container -->
                 </div><!-- /.copynote -->
 
-			</footer>
+                <div class="nav pull-right scroll-top">
+                    <a href="#home" title="Scroll to top"><i class="fa fa-angle-up"></i></a>
+                </div>
 
+            </footer><!-- /.footer -->
 		<<!-- Scripts -->
 			<script src="{{asset('turi/jstrad/jquery.min.js')}}"></script>
 			<script src="{{asset('turi/jstrad/jquery.poptrox.min.js')}}"></script>

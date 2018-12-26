@@ -1817,7 +1817,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
+		background: rgb(35, 38, 39);
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -1856,7 +1856,7 @@ input, select, textarea {
 
 					#header nav ul li a {
 						display: block;
-						color: inherit;
+						color: #fff;
 						text-decoration: none;
 						height: 3em;
 						line-height: 3em;
@@ -1889,7 +1889,6 @@ input, select, textarea {
 				}
 
 		}
-
 	body {
 		padding-top: 3em;
 	}
@@ -2142,93 +2141,90 @@ input, select, textarea {
 
 		}
 
+
 /* Footer */
 
-	#footer {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		position: relative;
-		margin: 0;
-		line-height: 1em;
-		padding: 1.5em;
-		background: #39454b;
-		color: rgba(185, 186, 187, 0.5);
-		overflow: hidden;
+	footer {
+	    background:rgba(54,53,54,.96); /* Dark color/Footer color, can be changed via colors.css */
+	    color:#fff;
+	    padding: 15px 0 0 0;
 	}
 
-		#footer > * {
-			margin-bottom: 0;
-		}
+	footer h2{
+	    display: inline-block;
+	    color:#fff;
+	}
 
-		#footer a {
-			color: inherit;
-		}
+	footer h4{
+	    margin: 0 0 20px 0;
+	    padding: 0;
+	    color:#fff;
+	}
 
-			#footer a:hover {
-				color: #b9babb;
-			}
+	footer p {
+	    margin: 10px 0;
+	    font-size: 14px;
+	}
 
-		#footer ul.menu {
-			margin: 0;
-		}
+	footer ul.blog-entries,
+	footer ul.twitter-entries{
+	    margin: 20px 0 0 0;
+	    padding: 0;
+	    list-style: none;
+	}
 
-			#footer ul.menu li {
-				border-left-color: rgba(185, 186, 187, 0.2);
-				font-size: 0.9em;
-			}
+	footer ul.blog-entries li,
+	footer ul.twitter-entries li{
+	    margin: 10px 0;
+	    line-height: 1.5;
+	}
 
-		@media screen and (max-width: 1000px) {
+	footer ul.blog-entries li span,
+	footer ul.twitter-entries li span{
+	    display: block;
+	    color: #6d7579;
+	}
 
-			#footer {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				-moz-justify-content: center;
-				-webkit-justify-content: center;
-				-ms-justify-content: center;
-				justify-content: center;
-				line-height: 1.5em;
-				text-align: center;
-				padding: 2em 1em 2em 1em;
-			}
+	footer .copynote{
+	    padding: 20px 0;
+	   /* margin-top: 40px;*/
+	    /*margin: 0 0 2% 0;*/
+	    background:rgba(54, 53, 54, 1); /* Dark color/Footer color, can be changed via colors.css */
+	}
 
-				#footer > * {
-					margin: 0 0 1em 0;
-				}
+	footer .segment{
+	    padding-bottom: 20px;
+	}
 
-		}
+	footer .social a{
+	    display: inline-block;
+	    padding: 6px;
+	}
 
-		@media screen and (max-width: 736px) {
+	.scroll-top {
+	    display: none;
+	    position: fixed;
+	    bottom: 4%;
+	    right: 1%;
+	    z-index: 100;
+	}
 
-			#footer ul.menu li {
-				border-left: none;
-				display: block;
-				line-height: inherit;
-				margin: 0.25em 0 0 0;
-				padding: 0.25em 0 0 0;
-			}
+	.scroll-top a:link,
+	.scroll-top a:visited {
+	    display: inline-block;
+	    padding: 5px 15px;
+	    color: #fff;
+	    border: 1px solid rgba(0,100,74, 1);
+	    background: rgba(0,100,74, 1); /* Primary color, can be changed via colors.css */
+	    font-size: 30px;
+	}
 
-				#footer ul.menu li:first-child {
-					margin-top: 0;
-					padding-top: 0;
-				}
-
-		}
-
-
-/*Inicio*/
-
+	.scroll-top a:hover {
+	    border: 1px solid #fff; /* Hover border color, can be changed via colors.css */
+	    outline: 0;
+	    color: #fff;
+	    background: #232627; /* Hover color, can be changed via colors.css */
+	}
 /* Intro */
 
 	#intro {
