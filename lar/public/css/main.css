@@ -2371,7 +2371,7 @@ input, select, textarea {
 				-ms-transition: background-color .075s ease-in-out, color .075s ease-in-out;
 				transition: background-color .075s ease-in-out, color .075s ease-in-out;
 				position: relative;
-				display: block;
+				display: inline-block;
 				text-decoration: none;
 				color: #fff;
 				top: -6px;

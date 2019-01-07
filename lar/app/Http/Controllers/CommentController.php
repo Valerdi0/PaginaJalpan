@@ -32,9 +32,9 @@ class CommentController extends Controller
 
         if($comment == null)
             return 'El comentario no existe';
-        else
+        else{
             $comment->delete();
-
-        return 'Comentario eliminado';
+            return redirect('/lista-post')->with('message', 'delete');
+        }
     }
 }

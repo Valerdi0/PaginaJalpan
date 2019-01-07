@@ -2326,7 +2326,7 @@ input, select, textarea {
 /* Intro */
 
 	#introdescubre {
-		background: url("images/overlay.png"), url("../../assets4/css/images/descubre/cascadas_taxhuada/3.jpeg");
+		background: url("images/overlay.png"), url("../../assets4/css/images/3.jpeg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2335,7 +2335,7 @@ input, select, textarea {
 /* Balneario */
 
 	#balneariod {
-		background: url("images/overlay.png"), url("../../assets4/css/images/descubre/balneario/2.JPG");
+		background: url("images/overlay.png"), url("../../assets4/css/images/2.JPG");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2344,7 +2344,7 @@ input, select, textarea {
 /* Puente */
 
 	#puented {
-		background: url("images/overlay.png"), url("../../assets4/css/images/descubre/puente_de_la_cruz/1.jpeg");
+		background: url("images/overlay.png"), url("../../assets4/css/images/fondo1.jpeg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2353,7 +2353,7 @@ input, select, textarea {
 /* Cascada */
 
 	#cascadad {
-		background: url("images/overlay.png"), url("../../assets4/css/images/descubre/cascadas_taxhuada/4.jpeg");
+		background: url("images/overlay.png"), url("../../assets4/css/images/4.jpeg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2395,73 +2395,16 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 
-/* Iglesia San Antonio */
-	
-	#iglesiasand {
-		background: url("images/overlay.png"), url("../../assets4/css/images/descubre/iglesia_san_antonio/iglesia_san_antonio.jpeg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
-/* Saborea */
-
-
-/* Disfruta */
-
-/* Intro */
-
-	#introdisfruta{
-		background: url("images/overlay.png"), url("../../assets4/css/images/disfruta/carnaval_de_mixquiahuala/colors.jpeg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
-/* Feria */
-	
-	#feriad {
-		background: url("images/overlay.png"), url("../../assets4/css/images/disfruta/feria_del_calvario/6.JPG");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
 /* Carnaval */
 
 	#carnavald {
-		background: url("images/overlay.png"), url("../../assets4/css/images/disfruta/carnaval_de_mixquiahuala/4.jpg");
+		background: url("images/overlay.png"), url("../../assets4/css/images/4.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
-/* Quita y Pone Bandera*/
-	
-	#quitad {
-		background: url("images/overlay.png"), url("../../assets4/css/images/disfruta/quita_y_pone_bandera/maxresdefault.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
 
-/* Feria del Cohetero */
-	
-	#feriacoheterod {
-		background: url("images/overlay.png"), url("../../assets4/css/images/disfruta/feria_del_cohetero/feria.JPG");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
-/* La Charreria */
-	
-	#charreriad {
-		background: url("images/overlay.png"), url("../../assets4/css/images/disfruta/charreria/adelita_caballo.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
 
 /* Contact */
 

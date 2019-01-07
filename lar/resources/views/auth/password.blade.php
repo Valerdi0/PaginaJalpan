@@ -1,3 +1,7 @@
+@extends('plantilla.base')
+
+@section('content')
+
 <form method="POST" action="/password/email">
     {!! csrf_field() !!}
 
@@ -13,10 +17,13 @@
         Email
         <input type="email" name="email" value="{{ old('email') }}">
     </div>
-
+    <br><br>
     <div>
         <button type="submit">
             Send Password Reset Link
         </button>
     </div>
 </form>
+
+
+@stop

@@ -18,9 +18,17 @@
             <li><a href="/turismo">Turismo</a></li>
             <li><a href="/transparencia">Transparencia</a></li>
             <li><a href="/organigrama">Organigrama</a></li>
-            <li><a href="/auth/logout">Cerrar sesion</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}} </a>
+              <ul class="dropdown-menu">
+                <li><a href="/inicio">inicio</a></li>
+                <li><a href="/lista-post">Ver post</a></li>
+                <li><a href="/auth/logout">Cerrar sesion</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
+
 	
 	<div class="jumbotron">
   <h1 class="display-3">Bienvenido {{auth()->user()->name}}!</h1>
@@ -36,8 +44,6 @@
   <a href="/post/editpost" class="list-group-item list-group-item-action active">
     Crear Post
   </a>
-  <a href="#" class="list-group-item list-group-item-action disabled">Eliminar Post
-  </a>
 </div>
 </div>
 <!-- Footer -->
@@ -50,8 +56,8 @@
                   <section>
                     <h2 class="major"><span>Redes Sociales</span></h2>
                     <ul class="contact">
-                      <li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
-                      <li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+                      <li><a class="icon fa-facebook" href="https://www.facebook.com/Ayuntamiento-Jalpan-2018-2021-340526706700657"><span class="label">Facebook</span></a></li>
+                      <li><a class="icon fa-instagram" href="https://www.instagram.com/ayuntamiento_jalpan.puebla"><span class="label">Instagram</span></a></li>
                     </ul>
                   </section>
 
@@ -61,7 +67,9 @@
             <!-- Copyright -->
               <div id="copyright">
                 <ul class="menu">
-                  <li>H. Ayuntamiento de Jalpan, Puebla. En colaboración con el Instituto Politécnico Nacional.</li>
+                  <li>H. Ayuntamiento de Jalpan, Puebla.<br> En colaboración con el Instituto Politécnico Nacional.<br>
+                  <img src="{{asset('turi/images/escudo.png')}}" title="H. Ayuntamiento de Jalpan, Puebla" style="height: 50px; padding-right: 2.5%;">
+                  <img src="{{asset('turi/images/logoipn.png')}}" title="Instituto Politécnico Nacional" style="height: 50px; padding-left: 2.5%;"> </li>
                 </ul>
               </div>
 

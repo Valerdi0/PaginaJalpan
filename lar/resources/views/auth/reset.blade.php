@@ -1,3 +1,7 @@
+@extends('plantilla.base')
+
+@section('content')
+
 <form method="POST" action="/password/reset">
     {!! csrf_field() !!}
     <input type="hidden" name="token" value="{{ $token }}">
@@ -24,6 +28,7 @@
         Confirm Password
         <input type="password" name="password_confirmation">
     </div>
+    <br><br>
 
     <div>
         <button type="submit">
@@ -31,3 +36,5 @@
         </button>
     </div>
 </form>
+
+@stop

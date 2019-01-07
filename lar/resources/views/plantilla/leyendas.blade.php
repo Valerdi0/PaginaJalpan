@@ -46,9 +46,6 @@
 						<h2>Los Voladores</h2>
 					</header>
 					<p align="justify">El rito de los voladores es una manifestación religiosa originaria de Mesoamérica México. Durante el ritual de los voladores se pedían diez días de abstinencia sexual a los danzantes, ya que si no la cumplían molestaba al Dios protector de los voladores  a quien es dedicada esta danza , decidiendo castigarlos y en el momento en el que llevaran varios giros en la descenso del giro del palo  se rompería el tecomate  haciendo que los danzantes cayeran al suelo y si corrieran con suerte de que el Dios se mostrara compasivo con su poder detendrá la caída y elevará al infinito a los voladores para nunca más regresar.</p>
-					<ul class="actions special">
-						<li><input type="submit" value="Ver Más" /></li>
-					</ul>
 				</div>
 				<a href="#puented" class="button style2 down anchored">Next</a>
 			</section>

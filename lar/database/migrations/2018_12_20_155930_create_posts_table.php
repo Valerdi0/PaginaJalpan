@@ -18,7 +18,6 @@ class CreatePostsTable extends Migration
             $table->text('resume', 300);
             $table->text('description');
             $table->string('publish_date');
-            $table->string('archivo');
             $table->tinyInteger('status'); // 0 No publicado / 1 Publicado
             $table->timestamps();
         });

@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{asset('turi/css/mainTrad.css')}}" />
+		<link rel="stylesheet" href="{{asset('turi/css/mainRN.css')}}" />
 		<noscript><link rel="stylesheet" href="{{asset('turi/css/noscript.css')}}" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -37,9 +38,9 @@
 					</header>
 					<p style="color:#f5ffd7; font-weight: 900; text-shadow:-1px -1px 0 #801d00;">
 					Jalpan, Puebla cuenta con una gran variedad de festividades en todos sus ejidos a lo largo del año, pero principalmente en Apapantilla que es la cabecera municipal.
-					<footer>
+					<p style="color: #fff; font-weight: 900; text-shadow:-1px -1px 0 #000; ">
 						<a href="#balneariod" class="button style2 down">More</a>
-					</footer>
+					</p>
 				</div>
 			</section>
 
@@ -76,12 +77,12 @@
 					</header>
 					<p align="justify">Dos semanas antes del carnaval, los nuevos fiscales reciben su nombramiento en la presidencia y también algunos materiales para cuidar durante su año de servicio.
 
-Los fiscales son los encargados de buscar el flautista, los cargadores para el tambor y los toros. El toro se elaborados de palos fuertes, amarrados y cubiertos con la piel de un animal, se colocan los cuernos de una vaca.
-Diez días antes de la celebración de miércoles de ceniza, los fiscales, el flautista, los toros y el tambor salen a pasear, acompañados del pueblo con bejucos para lanzar a los toros. 
-Después de la celebración del torito, los fiscales arreglan el lugar para preparar la comida de frijoles y buscan mujeres para guisar, mientras los jóvenes traen leña para la lumbre.
-</p>
+					Los fiscales son los encargados de buscar el flautista, los cargadores para el tambor y los toros. El toro se elaborados de palos fuertes, amarrados y cubiertos con la piel de un animal, se colocan los cuernos de una vaca.
+					Diez días antes de la celebración de miércoles de ceniza, los fiscales, el flautista, los toros y el tambor salen a pasear, acompañados del pueblo con bejucos para lanzar a los toros. 
+					Después de la celebración del torito, los fiscales arreglan el lugar para preparar la comida de frijoles y buscan mujeres para guisar, mientras los jóvenes traen leña para la lumbre.
+					</p>
 				</div>
-				<a href="#muralesd" class="button style2 down anchored">Next</a>
+				<a href="#piramided" class="button style2 down anchored">Next</a>
 			</section>
 		
 		<!-- Piramide de Donija -->
@@ -92,9 +93,8 @@ Después de la celebración del torito, los fiscales arreglan el lugar para prep
 					</header>
 					<p align="justify">Consiste en jugar con los toros hasta empezar una pelea con naranjas. Un compañero toca la campana mientras ocho hombres se tiran las naranjas unos a otros y a su vez a los toros, cuando se acaban las naranjas, se recolectan las que están regadas para echárselas al campanero, después amarran unos bejucos grandes al Toro, siendo los niños y los jóvenes quienes arrastran el toro alrededor de la iglesia, para que finalmente los jóvenes se dividan en dos equipos jalando el toro con astucia y fuerza a la casa del fiscal en dos diferentes direcciones, complicando su llegada y siendo uno de los dos bandos el que consiga llegar. Entonces todos se gozan de comer los frijoles.
 
-Al mismo tiempo los jóvenes prometen ante el fiscal continuar con la tradición para el siguiente año.’
-
-</p>
+					Al mismo tiempo los jóvenes prometen ante el fiscal continuar con la tradición para el siguiente año.’
+					</p>
 				</div>
 				<a href="#otrosrecintos" class="button style2 down anchored">Next</a>
 			</section>
@@ -124,6 +124,8 @@ Al mismo tiempo los jóvenes prometen ante el fiscal continuar con la tradición
 			</section>
 
 		<!-- Footer -->
+			<!-- Footer -->
+			<!-- Footer -->
             <footer>
                 <div class="container">
                     <div class="row text-center">

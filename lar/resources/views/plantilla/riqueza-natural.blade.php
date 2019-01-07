@@ -89,11 +89,9 @@ Después de la celebración del torito, los fiscales arreglan el lugar para prep
 					</header>
 					<p>Consiste en jugar con los toros hasta empezar una pelea con naranjas. Un compañero toca la campana mientras ocho hombres se tiran las naranjas unos a otros y a su vez a los toros, cuando se acaban las naranjas, se recolectan las que están regadas para echárselas al campanero, después amarran unos bejucos grandes al Toro, siendo los niños y los jóvenes quienes arrastran el toro alrededor de la iglesia, para que finalmente los jóvenes se dividan en dos equipos jalando el toro con astucia y fuerza a la casa del fiscal en dos diferentes direcciones, complicando su llegada y siendo uno de los dos bandos el que consiga llegar. Entonces todos se gozan de comer los frijoles.
 
-Al mismo tiempo los jóvenes prometen ante el fiscal continuar con la tradición para el siguiente año.
-
-</p>
+					Al mismo tiempo los jóvenes prometen ante el fiscal continuar con la tradición para el siguiente año.
+					</p>
 				</div>
-				
 			</section>
 
 	<!-- Footer -->
@@ -129,7 +127,7 @@ Al mismo tiempo los jóvenes prometen ante el fiscal continuar con la tradición
                 </div>
 
             </footer><!-- /.footer -->
-		<<!-- Scripts -->
+		<!-- Scripts -->
 			<script src="{{asset('turi/jstrad/jquery.min.js')}}"></script>
 			<script src="{{asset('turi/jstrad/jquery.poptrox.min.js')}}"></script>
 			<script src="{{asset('turi/jstrad/jquery.scrolly.min.js')}}"></script>

@@ -15,15 +15,26 @@
     <!-- Nav -->
                 <nav id="nav">
                     <ul>
-                        <li class="current"><a href="/">Inicio</a></li>
+                        <li><a href="/">Inicio</a></li>
                         <li>
                             <a href="/#main">Quienes Somos</a>
                         </li>
                         <li><a href="/tramites">Trámites</a></li>
                         <li><a href="/contacto">Contacto</a></li>
                         <li><a href="/turismo">Turismo</a></li>
-                        <li><a href="/transparencia">Transparencia</a></li>
+                        <li class="current"><a href="/transparencia">Transparencia</a></li>
                         <li><a href="/organigrama">Organigrama</a></li>
+                        @if(Auth::check())
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}} </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="/inicio">inicio</a></li>
+                                <li><a href="/lista-post">Ver posts</a></li>
+                                <li><a href="/password/email">Cambiar contraseña</a></li>
+                                <li><a href="/auth/logout">Cerrar sesion</a></li>
+                              </ul>
+                            </li>
+                        @endif
                     </ul>
                 </nav>
     <!-- Contenido -->
@@ -63,6 +74,9 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="{{asset('js/jquery.dropotron.min.js')}}"></script>
+    <script src="{{asset('js/breakpoints.min.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
   
 ​    @yield('js')
 ​

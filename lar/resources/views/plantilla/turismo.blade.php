@@ -69,6 +69,7 @@
                             <ul>
                                 <li><a href="/">Página Municipal</a></li>
                                 <li><a href="#home">Inicio</a></li>
+                                <li><a href="#services">Atractivos</a></li>
                                 <li><a href="#portfolio">Galería</a></li>
                                 <li><a href="#counter">Contacto</a></li>
                             </ul>
@@ -177,7 +178,7 @@
                         <div class="col-md-12">
                             <h2>GALERIA</h2>
                             <div style="position: center;">
-                                <hr style="height: 1px; width: 80%; background: #686868;"></hr>
+                                <hr style="height: 1px; width: 80%; background: #686868;"/>
                             </div>
                         </div><!-- /.col-md-12 -->
                     </div><!-- /.row -->
@@ -364,7 +365,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoVKfEihX__NdMwdDysA6Vve6PE9Ierj4"></script>
 
     <!-- Custom JavaScript -->
-    <script src="{{asset('turi/js/jquery.min.js')}}"></script>
+    <script src="{{asset('turi/js/hallooou.js')}}"></script>
 </body>
 
 </html>

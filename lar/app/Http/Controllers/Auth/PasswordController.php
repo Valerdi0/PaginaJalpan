@@ -17,7 +17,7 @@ class PasswordController extends Controller
     | explore this trait and override any methods you wish to tweak.
     |
     */
-    protected $redirectTo = '/revolution/coordinador/inicio';
+    protected $redirectTo = '/inicio';
 
     use ResetsPasswords;
 

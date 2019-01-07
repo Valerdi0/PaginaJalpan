@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 
 use App\Post;
 use App\Comment;
+use App\Archivo;
 use Input;
 
 class PostController extends Controller
@@ -27,16 +28,27 @@ class PostController extends Controller
 
         return view('plantilla.transparencia', $data);
     }
+
+    public function getListpost() {
+
+        //return "POST";
+
+        $data['posts'] = Post::where('status', 1)->get();
+
+        return view('plantilla.lista_post', $data);
+    }
  
     public function getPost($id) {
         
         $post = Post::find($id);
+        $archivos = Archivo::where('id_post', $id)->get();
+        //return var_dump($archivos);
 
         if($post == null)
             return 'No existe el post';
         else {
             $data['post'] = $post;
-            $data['archivos'] = explode(",", $post->archivo);
+            $data['archivos'] = $archivos;
             $data['comments'] = Comment::where('post_id', $id)->get();
             return view('plantilla.post', $data);
         }
@@ -58,27 +70,24 @@ class PostController extends Controller
         $post->description = $input['description'];
         $post->publish_date = $input['publish_date'];
         $post->status = $input['status'];
-
+        $post->save(); // Guarda el objeto en la BD
         //obtenemos el campo file definido en el formulario
         $files = $request->file('archivo');
-        if(!$files)
-            $post->archivo = "";
-        else{
-            $post->archivo = "";
+        if($files){
             $destinationPath = public_path().'/files';
-            
+            $posts = Post::All();
+            $post = $posts->last();            
             // recorremos cada archivo y lo subimos individualmente
             foreach($files as $file) {
+                $archivo = new Archivo();
                 $filename = $file->getClientOriginalName();
                 $upload_success = $file->move($destinationPath, $filename);
-                $post->archivo = $filename. "," .$post->archivo;
+                $archivo->nombre = $filename;
+                $archivo->id_post = $post->id;
+                $archivo->save();
             }
-
         }
-
-        $post->save(); // Guarda el objeto en la BD
-
-        return "Post guardado";
+        return redirect('/lista-post')->with('message', 'store');
     }
  
     public function getEditpost($id = null) {
@@ -100,8 +109,10 @@ class PostController extends Controller
 
         if($post == null)
             return "No existe este post";
-        else
+        else{
             $post->delete();
+            return redirect('/lista-post')->with('message', 'store');
+        }
     }
 
 }

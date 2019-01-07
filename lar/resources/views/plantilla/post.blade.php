@@ -23,7 +23,11 @@
 
 		<section class="post">
 
+			@if(Auth::check())
+			<a href="{{ url('/lista-post') }}" class="btn btn-primary" >Listado</a>
+			@else
 			<a href="{{ url('/post/list') }}" class="btn btn-primary" >Listado</a>
+			@endif
 			
 			<article class="post">
 				
@@ -38,43 +42,51 @@
 				<p>
 					
 					<div class="row">
-						@foreach($archivos as $archivo)
-							@if(strpos($archivo, ".jpg"))
-							<div class="col-xs-6 col-md-3">
-							    <a href="#" class="thumbnail">
-							      <img src="/files/{{$archivo}}" alt="">
-							    </a>
-							</div>
-							@endif
-							@if(strpos($archivo, ".png"))
-							<div class="col-xs-6 col-md-3">
-							    <a href="#" class="thumbnail">
-							      <img src="/files/{{$archivo}}" alt="">
-							    </a>
-							</div>
-							@endif
-							@if(strpos($archivo, ".jpeg"))
-							<div class="col-xs-6 col-md-3">
-							    <a href="#" class="thumbnail">
-							      <img src="/files/{{$archivo}}" alt="">
-							    </a>
-							</div>
-							@endif
-							@if(strpos($archivo, ".pdf"))
-							<div class="col-xs-6 col-md-3">
-							    <a target="_blank" class="thumbnail" href="{{asset('/files/'.$archivo)}}">
-							    	{{$post->archivo}}
-								</a>
-							</div>
-							@endif
-							@if(strpos($archivo, ".doc"))
-							<div class="col-xs-6 col-md-3">
-							    <a target="_blank" class="thumbnail" href="{{asset('/files/'.$archivo)}}">
-							    	{{$post->archivo}}
-								</a>
-							</div>
-							@endif
-						@endforeach
+						@if($archivos)
+							@foreach($archivos as $archivo)
+								@if(strpos($archivo->nombre, ".jpg"))
+								<div class="col-xs-6 col-md-3">
+								    <a href="#" class="thumbnail">
+								      <img src="/files/{{$archivo}}" alt="">
+								    </a>
+								</div>
+								@endif
+								@if(strpos($archivo->nombre, ".png"))
+								<div class="col-xs-6 col-md-3">
+								    <a href="#" class="thumbnail">
+								      <img src="/files/{{$archivo->nombre}}" alt="">
+								    </a>
+								</div>
+								@endif
+								@if(strpos($archivo->nombre, ".jpeg"))
+								<div class="col-xs-6 col-md-3">
+								    <a href="#" class="thumbnail">
+								      <img src="/files/{{$archivo->nombre}}" alt="">
+								    </a>
+								</div>
+								@endif
+								@if(strpos($archivo->nombre, ".pdf"))
+								<div class="col-xs-6 col-md-3">
+								    <a target="_blank" class="thumbnail" href="{{asset('/files/'.$archivo->nombre)}}">
+								    	{{$archivo->nombre}}
+									</a>
+								</div>
+								@endif
+								@if(strpos($archivo->nombre, ".doc"))
+								<div class="col-xs-6 col-md-3">
+								    <a target="_blank" class="thumbnail" href="{{asset('/files/'.$archivo->nombre)}}">
+								    	{{$archivo->nombre}}
+									</a>
+								</div>
+								@else
+								<div class="col-xs-6 col-md-3">
+								    <a target="_blank" class="thumbnail" href="{{asset('/files/'.$archivo->nombre)}}">
+								    	{{$archivo->nombre}}
+									</a>
+								</div>
+								@endif
+							@endforeach
+						@endif
 					</div>					
 				</p>
 
@@ -109,7 +121,9 @@
 								<div class="panel-heading">
 									<h3 class="panel-title">
 										{{ $comment->username }}
+										@if(Auth::check())
 										<a href="{{ url('comments/deletecomment/'.$comment->id) }}" class="btn btn-danger btn-xs pull-right">X</a>
+										@endif
 									</h3>
 								</div>
 								<div class="panel-body">

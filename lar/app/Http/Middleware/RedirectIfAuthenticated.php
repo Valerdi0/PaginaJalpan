@@ -37,17 +37,7 @@ class RedirectIfAuthenticated
     {
         if ($this->auth->check()) {
             $user = Auth::user();
-            switch ($user->rol) {
-                case 'coordinador':
-                    return redirect()->route('coordinador');
-                case 'analista':
-                    return redirect()->route('analista');
-                case 'empleado':
-                    return redirect()->route('cliente');
-                case 'empleado':
-                    $this->redirectTo = '/revolution/empresa/';
-                    break;
-            }            
+            return redirect()->route('inicio');         
         }
 
         return $next($request);

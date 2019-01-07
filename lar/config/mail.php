@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'valerdi.play@gmail.com', 'name' => 'Valerdi'],
+    'from' => ['address' => 'ayuntamiento.jalpan@gmail.com', 'name' => 'Jalpan'],
 
     /*
     |--------------------------------------------------------------------------

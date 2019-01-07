@@ -25,6 +25,17 @@
 						<li><a href="/turismo">Turismo</a></li>
 						<li><a href="/transparencia">Transparencia</a></li>
 						<li><a href="/organigrama">Organigrama</a></li>
+						@if(Auth::check())
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}} </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="/inicio">inicio</a></li>
+                                <li><a href="/lista-post">Ver post</a></li>
+                                <li><a href="/password/email">Cambiar contraseña</a></li>
+                                <li><a href="/auth/logout">Cerrar sesion</a></li>
+                              </ul>
+                            </li>
+                        @endif
 					</ul>
 				</nav>
 
@@ -120,7 +131,7 @@
 												<div class="col-12">
 													<ul class="actions">
 														<li><a href="/turismo" class="button large">Turismo</a></li>
-														<li><a href="#" class="button alt large">Galería</a></li>
+														<li><a href="/turismo#portfolio" class="button alt large">Galería</a></li>
 													</ul>
 												</div>
 											</div>

@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="{{asset('cont/css/estilos.css')}}">
     <link rel="stylesheet" href="{{asset('cont/css/font-awesome.css')}}">
 
-    <script src="{{asset('cont/js/jquery-3.2.1.js')}}"></script>
-    <script src="{{asset('cont/js/script.js')}}"></script>
 </head>
 <body>
 
@@ -27,6 +25,17 @@
                 <li><a href="/turismo">Turismo</a></li>
                 <li><a href="/transparencia">Transparencia</a></li>
                 <li><a href="/organigrama">Organigrama</a></li>
+                @if(Auth::check())
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}} </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="/inicio">inicio</a></li>
+                                <li><a href="/lista-post">Ver posts</a></li>
+                                <li><a href="/password/email">Cambiar contraseña</a></li>
+                                <li><a href="/auth/logout">Cerrar sesion</a></li>
+                              </ul>
+                            </li>
+                        @endif
             </ul>
         </nav>
 
@@ -50,10 +59,10 @@
                 <label for="names">Nombres *</label>
                 <input type="text" id="names" name="names" >
 
-                <label for="phone">Telefono / Celular*</label>
+                <label for="phone">Telefono / Celular</label>
                 <input type="text" id="phone" name="phone" >
 
-                <label for="subject">Asunto</label>
+                <label for="subject">Asunto*</label>
                 <input id="subject" name="subject">
 
                 <label for="email">Correo electronico </label>
@@ -97,6 +106,11 @@
 
                     </div>
                 </footer>
+    <script src="{{asset('cont/js/jquery-3.2.1.js')}}"></script>
+    <script src="{{asset('cont/js/script.js')}}"></script>
+    <script src="{{asset('js/jquery.dropotron.min.js')}}"></script>
+    <script src="{{asset('js/breakpoints.min.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
 
 </body>
 </html>
